@@ -1,26 +1,26 @@
 package rca.ac.rw.orm;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "likes")
 public class Likes {
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
 private int id;
+@OneToMany
+@JoinColumn(name = "post_id")
 private Posts posts;
+@OneToMany
+@JoinColumn(name = "user_id")
 private User user;
 private Date date;
 
-    public Likes(int id, Posts posts, User user, Date date) {
-        this.id = id;
+    public Likes( Posts posts, User user, Date date) {
         this.posts = posts;
         this.user = user;
         this.date = date;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Posts getPosts() {
