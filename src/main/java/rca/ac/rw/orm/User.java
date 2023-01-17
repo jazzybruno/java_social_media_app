@@ -1,10 +1,14 @@
 package rca.ac.rw.orm;
 
+import java.util.ArrayList;
+
 public class User {
     private int id;
     private String name;
     private int phone;
     private String email;
+    private String profilePic;
+    private ArrayList<User> followers = new ArrayList<User>();
 
     public User(int id, String name, int phone, String email, String profilePic) {
         this.id = id;
@@ -54,6 +58,11 @@ public class User {
         this.profilePic = profilePic;
     }
 
-    private String profilePic;
+    public ArrayList<User> getFollowers() {
+        return followers;
+    }
 
+    public void setFollowers(ArrayList<User> followers) {
+        this.followers = followers;
+    }
 }
