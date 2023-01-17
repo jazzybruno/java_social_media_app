@@ -1,9 +1,14 @@
 package rca.ac.rw.orm;
 
+import javax.persistence.*;
 import javax.xml.crypto.Data;
 import java.util.Date;
 
+@Entity
+@Table(name = "notifications")
 public class Notifications {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String content;
     private boolean isRead;

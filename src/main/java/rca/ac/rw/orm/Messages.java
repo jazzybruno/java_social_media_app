@@ -1,12 +1,21 @@
 package rca.ac.rw.orm;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "messages")
 public class Messages {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String message;
     private Date date;
+    @OneToMany
+    @JoinColumn(name = "user_id")
     private  User sender;
+    @OneToMany
+    @JoinColumn(name = "user_id")
     private User receiver;
 
     public Messages(int id, String message, Date date, User sender, User receiver) {
