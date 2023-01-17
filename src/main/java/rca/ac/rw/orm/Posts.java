@@ -8,7 +8,7 @@ import java.util.Date;
 public class Posts {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int id;
+    public int post_id;
     public String description;
     public ArrayList<String> postPhotos = new ArrayList<String>();
     @OneToMany
@@ -19,21 +19,12 @@ public class Posts {
 
     public Date addedDate;
 
-    public Posts(int id, String description, ArrayList<String> postPhotos, User user, int likes, int comments ) {
-        this.id = id;
+    public Posts( String description, ArrayList<String> postPhotos, User user, int likes, int comments ) {
         this.description = description;
         this.postPhotos = postPhotos;
         this.user = user;
         this.likes = likes;
         this.comments = comments;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getDescription() {

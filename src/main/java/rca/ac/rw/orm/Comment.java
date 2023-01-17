@@ -1,13 +1,22 @@
 package rca.ac.rw.orm;
 
+import javax.persistence.*;
 import javax.xml.crypto.Data;
 import java.util.Date;
 
+@Entity
+@Table(name = "comments")
 public class Comment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 private int id;
 private String contents;
 private Date timeAdded;
+@OneToMany
+@JoinColumn(name = "user_id")
 private User user;
+@OneToMany
+@JoinColumn(name = "post_id")
 private Posts posts;
 
     public Comment(int id, String contents, Date timeAdded, User user, Posts posts) {
