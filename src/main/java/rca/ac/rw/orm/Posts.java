@@ -1,12 +1,18 @@
 package rca.ac.rw.orm;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
-
+@Entity
+@Table(name = "posts")
 public class Posts {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int id;
     public String description;
     public ArrayList<String> postPhotos = new ArrayList<String>();
+    @OneToMany
+    @JoinColumn(name = "user_id")
     public User user;
     public int likes;
     public int comments;

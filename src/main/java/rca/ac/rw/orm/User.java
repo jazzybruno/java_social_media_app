@@ -1,29 +1,25 @@
 package rca.ac.rw.orm;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 
+@Entity
+@Table(name = "users")
 public class User {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int user_id;
     private String name;
     private int phone;
     private String email;
     private String profilePic;
     private ArrayList<User> followers = new ArrayList<User>();
 
-    public User(int id, String name, int phone, String email, String profilePic) {
-        this.id = id;
+    public User( String name, int phone, String email, String profilePic) {
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.profilePic = profilePic;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
