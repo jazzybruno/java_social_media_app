@@ -1,6 +1,7 @@
 package rca.ac.rw.orm;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Posts {
     public int id;
@@ -9,7 +10,10 @@ public class Posts {
     public User user;
     public int likes;
     public int comments;
-    public Posts(int id, String description, ArrayList<String> postPhotos, User user, int likes, int comments) {
+
+    public Date addedDate;
+
+    public Posts(int id, String description, ArrayList<String> postPhotos, User user, int likes, int comments ) {
         this.id = id;
         this.description = description;
         this.postPhotos = postPhotos;
@@ -64,5 +68,13 @@ public class Posts {
 
     public void setComments(int comments) {
         this.comments = comments;
+    }
+
+    public Date getAddedDate() {
+        return addedDate;
+    }
+
+    public void setAddedDate(Date addedDate) {
+        this.addedDate = addedDate;
     }
 }
