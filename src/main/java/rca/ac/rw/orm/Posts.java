@@ -18,6 +18,9 @@ public class Posts {
     public int comments;
 
     public Date addedDate;
+    public  Posts(){
+
+    }
 
     public Posts( String description, ArrayList<String> postPhotos, User user, int likes, int comments ) {
         this.description = description;

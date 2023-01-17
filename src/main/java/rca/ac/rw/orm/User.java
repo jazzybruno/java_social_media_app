@@ -1,5 +1,6 @@
 package rca.ac.rw.orm;
 
+import rca.ac.rw.orm.*;
 import javax.persistence.*;
 import java.util.ArrayList;
 
@@ -10,12 +11,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int user_id;
     private String name;
-    private int phone;
+    private String phone;
     private String email;
     private String profilePic;
     private ArrayList<User> followers = new ArrayList<User>();
 
-    public User( String name, int phone, String email, String profilePic) {
+     public User(){
+
+     }
+
+    public User( String name, String phone, String email, String profilePic) {
         this.name = name;
         this.phone = phone;
         this.email = email;
@@ -30,11 +35,11 @@ public class User {
         this.name = name;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

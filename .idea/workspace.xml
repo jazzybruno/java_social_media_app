@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a93e2424-bb87-40a3-bcb8-75f70a3d0fb2" name="Changes" comment="Removed the followers java class and added that property in the users class" />
+    <list default="true" id="a93e2424-bb87-40a3-bcb8-75f70a3d0fb2" name="Changes" comment="Removed the followers java class and added that property in the users class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/DAO/PostDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/DAOImpl/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/DAOImpl/PostDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/starter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/starter/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +85,11 @@
       <workItem from="1673926348128" duration="6715000" />
       <workItem from="1673935659997" duration="1538000" />
       <workItem from="1673937237199" duration="8801000" />
-      <workItem from="1673947925793" duration="7982000" />
+      <workItem from="1673947925793" duration="8834000" />
+      <workItem from="1673963185688" duration="4173000" />
+      <workItem from="1673967701591" duration="662000" />
+      <workItem from="1673976586852" duration="71000" />
+      <workItem from="1673978721567" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="Removed the followers java class and added that property in the users class">
       <created>1673939680888</created>
