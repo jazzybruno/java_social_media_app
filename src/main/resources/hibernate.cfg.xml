@@ -28,6 +28,12 @@
         <property name="hibernate.c3p0.timeout">1800</property>
 
         <!-- Models -->
+            <mapping class="rca.ac.rw.orm.User"></mapping>
+            <mapping class="rca.ac.rw.orm.Likes"></mapping>
+            <mapping class="rca.ac.rw.orm.Messages"></mapping>
+            <mapping class="rca.ac.rw.orm.Notifications"></mapping>
+            <mapping class="rca.ac.rw.orm.Posts"></mapping>
+            <mapping class="rca.ac.rw.orm.Comment"></mapping>
 
     </session-factory>
 </hibernate-configuration>
