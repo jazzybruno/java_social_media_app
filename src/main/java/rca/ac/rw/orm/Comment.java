@@ -12,12 +12,16 @@ public class Comment {
 private int id;
 private String contents;
 private Date timeAdded;
-@OneToMany
+@ManyToOne
 @JoinColumn(name = "user_id")
 private User user;
-@OneToMany
+@ManyToOne
 @JoinColumn(name = "post_id")
 private Posts posts;
+
+     public Comment(){
+
+     }
 
     public Comment(int id, String contents, Date timeAdded, User user, Posts posts) {
         this.id = id;

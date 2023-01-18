@@ -6,6 +6,8 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import rca.ac.rw.orm.User;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String args[]){
         System.out.println("The configuration are being loaded");

@@ -12,7 +12,7 @@ public class Messages {
     private String message;
     private Date date;
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "email")
     private  User sender;
     @ManyToOne
     @JoinColumn(name = "user_id")

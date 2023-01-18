@@ -15,7 +15,7 @@ public class User {
     private String email;
     private String profilePic;
 
-    private ArrayList<User> followers = new ArrayList<User>();
+//    private ArrayList<User> followers = new ArrayList<User>();
 
      public User(){
 
@@ -60,11 +60,11 @@ public class User {
         this.profilePic = profilePic;
     }
 
-    public ArrayList<User> getFollowers() {
-        return followers;
-    }
-
-    public void setFollowers(ArrayList<User> followers) {
-        this.followers = followers;
-    }
+//    public ArrayList<User> getFollowers() {
+//        return followers;
+//    }
+//
+//    public void setFollowers(ArrayList<User> followers) {
+//        this.followers = followers;
+//    }
 }
