@@ -11,12 +11,17 @@ public class Messages {
     private int id;
     private String message;
     private Date date;
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private  User sender;
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private User receiver;
+
+
+    public Messages(){
+
+    }
 
     public Messages(int id, String message, Date date, User sender, User receiver) {
         this.id = id;

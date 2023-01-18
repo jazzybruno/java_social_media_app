@@ -14,6 +14,7 @@ public class User {
     private String phone;
     private String email;
     private String profilePic;
+
     private ArrayList<User> followers = new ArrayList<User>();
 
      public User(){

@@ -9,10 +9,10 @@ public class Likes {
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
 private int id;
-@OneToMany
+@ManyToOne
 @JoinColumn(name = "post_id")
 private Posts posts;
-@OneToMany
+@ManyToOne
 @JoinColumn(name = "user_id")
 private User user;
 private Date date;

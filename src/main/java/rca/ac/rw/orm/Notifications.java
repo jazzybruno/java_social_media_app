@@ -14,6 +14,10 @@ public class Notifications {
     private boolean isRead;
     private Date date;
 
+    public Notifications(){
+
+    }
+
     public Notifications(int id, String content, boolean isRead, Date date) {
         this.id = id;
         this.content = content;

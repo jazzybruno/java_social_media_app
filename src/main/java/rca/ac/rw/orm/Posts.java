@@ -11,7 +11,7 @@ public class Posts {
     public int post_id;
     public String description;
     public ArrayList<String> postPhotos = new ArrayList<String>();
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "user_id")
     public User user;
     public int likes;
