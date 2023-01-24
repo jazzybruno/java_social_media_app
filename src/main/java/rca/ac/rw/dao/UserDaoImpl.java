@@ -1,11 +1,11 @@
-package rca.ac.rw.dao.user;
+package rca.ac.rw.dao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import rca.ac.rw.orm.User;
 
 import java.util.List;
 
-public class UserDaoImpl {
+public class UserDaoImpl implements UserDao{
     private Session session;
     Transaction transaction = null;
 

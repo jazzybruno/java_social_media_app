@@ -5,29 +5,29 @@ import java.util.Date;
 
 @Entity
 @Table(name = "likes")
-public class Likes {
+public class Like {
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
 private int id;
 @ManyToOne
 @JoinColumn(name = "post_id")
-private Posts posts;
+private Post posts;
 @ManyToOne
 @JoinColumn(name = "user_id")
 private User user;
 private Date date;
 
-    public Likes( Posts posts, User user, Date date) {
+    public Like(Post posts, User user, Date date) {
         this.posts = posts;
         this.user = user;
         this.date = date;
     }
 
-    public Posts getPosts() {
+    public Post getPosts() {
         return posts;
     }
 
-    public void setPosts(Posts posts) {
+    public void setPosts(Post posts) {
         this.posts = posts;
     }
 

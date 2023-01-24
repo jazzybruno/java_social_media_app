@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 @Entity
 @Table(name = "posts")
-public class Posts {
+public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public int post_id;
@@ -18,11 +18,11 @@ public class Posts {
     public int comments;
 
     public Date addedDate;
-    public  Posts(){
+    public Post(){
 
     }
 
-    public Posts( String description, ArrayList<String> postPhotos, User user, int likes, int comments ) {
+    public Post(String description, ArrayList<String> postPhotos, User user, int likes, int comments ) {
         this.description = description;
         this.postPhotos = postPhotos;
         this.user = user;

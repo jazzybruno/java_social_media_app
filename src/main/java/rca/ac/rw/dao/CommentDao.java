@@ -1,4 +1,4 @@
-package rca.ac.rw.dao.comment;
+package rca.ac.rw.dao;
 
 import org.apache.poi.hssf.record.formula.functions.Exec;
 import org.apache.poi.hssf.record.formula.functions.T;
