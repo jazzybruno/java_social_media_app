@@ -6,7 +6,7 @@ import rca.ac.rw.orm.Comment;
 
 import java.util.List;
 
-public class CommentDaoImpl {
+public class CommentDaoImpl implements CommentDao {
     private Session session;
     Transaction transaction = null;
     public CommentDaoImpl(Session session){
