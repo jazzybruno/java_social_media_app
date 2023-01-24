@@ -16,9 +16,20 @@ private Date timeAdded;
 private User user;
 @ManyToOne
 @JoinColumn(name = "post_id")
-private Post posts;
+private Post post;
+@OneToOne
+@JoinColumn(name = "comment_id")
+private Comment comment;
 
-     public Comment(){
+    public Comment getComment() {
+        return comment;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
+
+    public Comment(){
 
      }
 
@@ -27,7 +38,7 @@ private Post posts;
         this.contents = contents;
         this.timeAdded = timeAdded;
         this.user = user;
-        this.posts = posts;
+        this.post = posts;
     }
 
     public int getId() {
@@ -63,10 +74,11 @@ private Post posts;
     }
 
     public Post getPosts() {
-        return posts;
+        return post;
     }
 
     public void setPosts(Post posts) {
-        this.posts = posts;
+        this.post = posts;
     }
+
 }

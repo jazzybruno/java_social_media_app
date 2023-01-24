@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a93e2424-bb87-40a3-bcb8-75f70a3d0fb2" name="Changes" comment="Removed the followers java class and added that property in the users class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/connection/C3P0ConnectionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Likes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Like.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/starter/StarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/starter/StarterApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -76,6 +66,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="rca.ac.rw.dao" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="StarterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rca.ac.rw.starter.StarterApp" />
@@ -121,7 +116,7 @@
       <workItem from="1674128759518" duration="228000" />
       <workItem from="1674462669041" duration="8931000" />
       <workItem from="1674566344097" duration="9000" />
-      <workItem from="1674566544623" duration="6497000" />
+      <workItem from="1674566544623" duration="8619000" />
     </task>
     <task id="LOCAL-00001" summary="Removed the followers java class and added that property in the users class">
       <created>1673939680888</created>
