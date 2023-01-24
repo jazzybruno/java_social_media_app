@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import rca.ac.rw.dao.UserDao;
 import rca.ac.rw.dao.UserDaoImpl;
 import rca.ac.rw.orm.User;
 
@@ -20,9 +21,9 @@ public class StarterApp {
         Session session = factory.openSession();
 
         //the user to be registered
-        User user = new User("Jazzy Bruno" , "0788097878" , "jazzybruno45@gmail.com" , "https://github.com/jazzybruno");
+        User user = new User("Naruto" , "07887878" , "laurent@gmail.com" , "https://github.com/jazzybruno");
         UserDaoImpl userDao = new UserDaoImpl(session);
 
-        userDao.saveUser(user);
+        userDao.deleteUser(1);
     }
 }

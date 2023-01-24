@@ -34,7 +34,7 @@ public class UserDaoImpl implements UserDao{
     public void updateUser(User user){
         try {
             transaction = session.beginTransaction();
-            session.update(user);
+            session.saveOrUpdate(user);
             transaction.commit();
         }catch (Exception e){
             if (transaction != null) {
