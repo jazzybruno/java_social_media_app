@@ -19,15 +19,7 @@ private User user;
 private Post post;
 @OneToOne
 @JoinColumn(name = "comment_id")
-private Comment comment;
-
-    public Comment getComment() {
-        return comment;
-    }
-
-    public void setComment(Comment comment) {
-        this.comment = comment;
-    }
+private Comment childComment;
 
     public Comment(){
 
@@ -81,4 +73,11 @@ private Comment comment;
         this.post = posts;
     }
 
+    public Comment getChildComment() {
+        return childComment;
+    }
+
+    public void setChildComment(Comment childComment) {
+        this.childComment = childComment;
+    }
 }

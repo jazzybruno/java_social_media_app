@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a93e2424-bb87-40a3-bcb8-75f70a3d0fb2" name="Changes" comment="Removed the followers java class and added that property in the users class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/CommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/orm/Comment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <workItem from="1674462669041" duration="8931000" />
       <workItem from="1674566344097" duration="9000" />
       <workItem from="1674566544623" duration="9155000" />
-      <workItem from="1674578660883" duration="2596000" />
+      <workItem from="1674578660883" duration="2949000" />
     </task>
     <task id="LOCAL-00001" summary="Removed the followers java class and added that property in the users class">
       <created>1673939680888</created>
