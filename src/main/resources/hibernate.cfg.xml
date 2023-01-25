@@ -3,10 +3,10 @@
 <hibernate-configuration>
     <session-factory>
 <!--        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>-->
-        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/javawork</property>
-        <property name="hibernate.connection.username">bruno</property>
-        <property name="hibernate.connection.password">Bruno@1980</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/rwanda</property>
+        <property name="hibernate.connection.username">laurent</property>
+        <property name="hibernate.connection.password">sh@d0w123</property>
 
 
         <property name="hibernate.session_factory_name">SchoolSessionFactory</property>
