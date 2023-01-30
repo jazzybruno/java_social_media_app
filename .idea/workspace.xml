@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a93e2424-bb87-40a3-bcb8-75f70a3d0fb2" name="Changes" comment="Removed the followers java class and added that property in the users class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/LikeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/LikeDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/PostDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_01_2023_15_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_01_2023_15_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/post/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/PostDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/LikeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rca/ac/rw/dao/LikeDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
