@@ -1,19 +1,37 @@
 package rca.ac.rw.dao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import rca.ac.rw.orm.Posts;
+import org.jboss.logging.annotations.Pos;
+import rca.ac.rw.orm.Post;
 
-public class PostDaoImpl {
+import java.util.List;
+
+public class PostDaoImpl implements PostDao{
     private Session session;
     Transaction transaction = null;
     public PostDaoImpl(Session session){
         this.session = session;
     }
 
-    public void savePost(Posts posts){
+    public List<Post> getPosts(){
         try {
             transaction = session.beginTransaction();
-            session.save(posts);
+            List<Post> posts = session.createCriteria(Post.class).list();
+            transaction.commit();
+            session.close();
+            return posts;
+        }catch (Exception e){
+            if(transaction != null){
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public void savePost(Post post){
+        try {
+            transaction = session.beginTransaction();
+            session.save(post);
             transaction.commit();
         }catch (Exception e){
             if(transaction != null){
@@ -23,11 +41,11 @@ public class PostDaoImpl {
         }
     }
 
-    public void updatePost(Posts posts){
+    public void updatePost(Post post){
 
         try {
             transaction = session.beginTransaction();
-            session.update(posts);
+            session.update(post);
             transaction.commit();
         }catch (Exception e){
             if(transaction != null){
@@ -40,7 +58,7 @@ public class PostDaoImpl {
     public void deletePost(int id){
         try {
             transaction = session.beginTransaction();
-            Posts posts  = (Posts) session.get(Posts.class , id);
+            Post posts  = (Post) session.get(Post.class , id);
 
             if(posts != null){
                 session.delete(posts);
