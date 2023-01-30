@@ -1,15 +1,12 @@
-package rca.ac.rw.dao.post;
-import org.apache.poi.hssf.record.formula.functions.Exec;
-import org.apache.poi.hssf.record.formula.functions.T;
+package rca.ac.rw.dao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import rca.ac.rw.orm.Comment;
 import rca.ac.rw.orm.Posts;
 
-public class PostDao {
+public class PostDaoImpl {
     private Session session;
     Transaction transaction = null;
-    public PostDao(Session session){
+    public PostDaoImpl(Session session){
         this.session = session;
     }
 
