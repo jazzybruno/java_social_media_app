@@ -5,7 +5,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "messages")
-public class Messages {
+public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -19,11 +19,11 @@ public class Messages {
     private User receiver;
 
 
-    public Messages(){
+    public Message(){
 
     }
 
-    public Messages(int id, String message, Date date, User sender, User receiver) {
+    public Message(int id, String message, Date date, User sender, User receiver) {
         this.id = id;
         this.message = message;
         this.date = date;

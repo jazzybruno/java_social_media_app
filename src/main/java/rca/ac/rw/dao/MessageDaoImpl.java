@@ -1,22 +1,26 @@
-package rca.ac.rw.dao.user;
+package rca.ac.rw.dao;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import rca.ac.rw.orm.Message;
 import rca.ac.rw.orm.User;
 
 import java.util.List;
 
-public class UserDaoImpl {
+public class MessageDaoImpl implements MessageDao{
+
     private Session session;
+
     Transaction transaction = null;
 
-    public UserDaoImpl(Session session){
+    public MessageDaoImpl(Session session){
         this.session = session;
     }
 
-    public void saveUser(User user){
+    public void saveMessage(Message message){
         try {
             transaction = session.beginTransaction();
-            session.save(user);
+            session.save(message);
             transaction.commit();
         }catch (Exception e){
             if (transaction != null) {
@@ -26,15 +30,15 @@ public class UserDaoImpl {
         }
     }
 
-    public List<User> getUsers(){
-       List<User> users = session.createCriteria(User.class).list();
-       return users;
+    public List<Message> getMessages(){
+        List<Message> messages = session.createCriteria(Message.class).list();
+        return messages;
     }
 
-    public void updateUser(User user){
+    public void updateMessage(Message message){
         try {
             transaction = session.beginTransaction();
-            session.update(user);
+            session.saveOrUpdate(message);
             transaction.commit();
         }catch (Exception e){
             if (transaction != null) {
@@ -44,12 +48,12 @@ public class UserDaoImpl {
         }
     }
 
-    public void deleteUser(int id){
+    public void deleteMessage(int id){
         try {
             transaction = session.beginTransaction();
-            User user = (User) session.get(User.class , id);
-            if(user != null){
-                session.delete(user);
+            Message message = (Message) session.get(Message.class , id);
+            if(message != null){
+                session.delete(message);
             }
             transaction.commit();
         }catch (Exception e){

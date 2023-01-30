@@ -19,5 +19,12 @@ C:/Users/HP/IdeaProjects/house-booker/src/main/resources/hibernate.cfg.xml</rema
       <jdbc-url>jdbc:mysql://localhost:3306/javawork</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="javawork@localhost [2]" uuid="22a8f41c-3d5c-4341-820e-aa422625e2d0">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/javawork</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

@@ -1,17 +1,15 @@
-package rca.ac.rw.dao.comment;
+package rca.ac.rw.dao;
 
-import org.apache.poi.hssf.record.formula.functions.Exec;
-import org.apache.poi.hssf.record.formula.functions.T;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import rca.ac.rw.orm.Comment;
 
 import java.util.List;
 
-public class CommentDao {
+public class CommentDaoImpl implements CommentDao {
     private Session session;
     Transaction transaction = null;
-    public CommentDao(Session session){
+    public CommentDaoImpl(Session session){
         this.session = session;
     }
 

@@ -1,12 +1,11 @@
 package rca.ac.rw.orm;
 
 import javax.persistence.*;
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 @Entity
 @Table(name = "notifications")
-public class Notifications {
+public class Notification {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -14,11 +13,11 @@ public class Notifications {
     private boolean isRead;
     private Date date;
 
-    public Notifications(){
+    public Notification(){
 
     }
 
-    public Notifications(int id, String content, boolean isRead, Date date) {
+    public Notification(int id, String content, boolean isRead, Date date) {
         this.id = id;
         this.content = content;
         this.isRead = isRead;

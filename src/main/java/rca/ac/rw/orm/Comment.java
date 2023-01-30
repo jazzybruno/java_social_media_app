@@ -1,7 +1,6 @@
 package rca.ac.rw.orm;
 
 import javax.persistence.*;
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 @Entity
@@ -17,18 +16,21 @@ private Date timeAdded;
 private User user;
 @ManyToOne
 @JoinColumn(name = "post_id")
-private Posts posts;
+private Post post;
+@OneToOne
+@JoinColumn(name = "comment_id")
+private Comment childComment;
 
-     public Comment(){
+    public Comment(){
 
      }
 
-    public Comment(int id, String contents, Date timeAdded, User user, Posts posts) {
+    public Comment(int id, String contents, Date timeAdded, User user, Post posts) {
         this.id = id;
         this.contents = contents;
         this.timeAdded = timeAdded;
         this.user = user;
-        this.posts = posts;
+        this.post = posts;
     }
 
     public int getId() {
@@ -63,11 +65,19 @@ private Posts posts;
         this.user = user;
     }
 
-    public Posts getPosts() {
-        return posts;
+    public Post getPosts() {
+        return post;
     }
 
-    public void setPosts(Posts posts) {
-        this.posts = posts;
+    public void setPosts(Post posts) {
+        this.post = posts;
+    }
+
+    public Comment getChildComment() {
+        return childComment;
+    }
+
+    public void setChildComment(Comment childComment) {
+        this.childComment = childComment;
     }
 }
